@@ -1,0 +1,17 @@
+create database `sql_tutorial`;
+show databases;
+
+
+CREATE TABLE `student`(
+ `student_id` INT PRIMARY KEY,
+ `name` VARCHAR(20),
+ `major`VARCHAR(20) 
+);
+
+describe `student`; 
+ALTER table `student` ADD GPA DECIMAL (3,2);
+describe `student`; 
+ALTER table `student` DROP COLUMN GPA; 
+describe `student`;  
+
+
