@@ -3,15 +3,23 @@ show databases;
 
 
 CREATE TABLE `student`(
- `student_id` INT PRIMARY KEY,
- `name` VARCHAR(20),
- `major`VARCHAR(20) 
+ `student_id` INT AUTO_INCREMENT ,
+ `name` VARCHAR(20) NOT NULL,
+ `major`VARCHAR(20) DEFAULT'歷史',
+ PRIMARY KEY (`student_id`)
 );
+DROP TABLE`student`; 
 
 describe `student`; 
 ALTER table `student` ADD GPA DECIMAL (3,2);
 describe `student`; 
 ALTER table `student` DROP COLUMN GPA; 
 describe `student`;  
+
+SELECT * FROM `student` ;
+INSERT INTO `student` VALUES(1, '小白', "英語");
+INSERT INTO `student` VALUES(2, '小黑', "歷史");
+INSERT INTO `student` (`name`, `major`)VALUES('小綠','英語');
+
 
 
