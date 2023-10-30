@@ -1,3 +1,4 @@
+
 create database `sql_tutorial`;
 show databases;
 
@@ -10,16 +11,19 @@ CREATE TABLE `student`(
 );
 DROP TABLE`student`; 
 
+
 describe `student`; 
 ALTER table `student` ADD GPA DECIMAL (3,2);
 describe `student`; 
 ALTER table `student` DROP COLUMN GPA; 
 describe `student`;  
 
+
 SELECT * FROM `student` ;
 INSERT INTO `student` VALUES(1, '小白', "英語");
 INSERT INTO `student` VALUES(2, '小黑', "歷史");
 INSERT INTO `student` (`name`, `major`)VALUES('小綠','英語');
+
 
 
 
